@@ -1,0 +1,22 @@
+//STRING: x + "" | NUMBER: +x | BOOLEAN: !!x 
+
+x
+
+undefined: "undefined", NaN, false
+null: "null", 0, false
+true: "true", 1, true
+false: "false", 0, false
+"": "", 0, false
+"1.2": "1.2", 1.2, true
+"one": "one", NaN, true
+0: "0", 0, false
+-0: "-0", -0, false
+NaN: "NaN", NaN, false
+Infinity: "Infinity", Infinity, true
+-Infinity: "-Infinity", -Infinity, true
+1: "1", 1, true
+{}: 0, NaN, true
+[]: "", 0, true
+[12]: "12", 12, true
+['something']: "something", NaN, true
+function(){}: SyntaxError: Unexpected token (, NaN, true

@@ -1,0 +1,44 @@
+body {
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
+  color: #6F6C6C;
+  font-size: 14px;
+  line-height: 18px; }
+
+.accordion {
+  margin: 0 auto;
+  max-width: 500px; }
+
+/*
+@mixin transition($property, $duration, $timing-function) {
+transition: 0s $duration background-color ease-in, 1s $duration color ease-in;
+}
+*/
+header {
+  line-height: 1.2;
+  font-size: 20px;
+  margin: 0;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #13dbea;
+  color: white;
+  font-weight: lighter;
+  transition: 1s; }
+  header:hover {
+    padding-left: 30px;
+    background-color: silver; }
+
+section {
+  overflow: hidden;
+  height: 180px;
+  border: 1px solid #11B4C2;
+  border-bottom: none;
+  transition: 1s; }
+  section:last-child {
+    border-bottom: 1px solid #11B4C2; }
+  section.hidden {
+    height: 40px;
+    transition: 1s; }
+
+p {
+  padding: 10px 20px; }
